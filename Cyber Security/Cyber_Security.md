@@ -46,7 +46,7 @@ principle, where people get only the access they need.
   It replaced thr wartime OSS (Office of Strategic Services) and became the main civillian foreign intelligence agency of the United States.
   It is headquarters are in Langley, Virginia.
 
-  > What is does:
+What is does:
 
 - **Collection:** Gathers intelligence from human sources (spies and informants), open sources, and technical means, often working alongside other agencies like the NASA.
 - **Analysis:** Turns raw information into assessments for the President and policymakers, such as the daily intelligence briefing.
