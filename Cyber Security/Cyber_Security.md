@@ -61,7 +61,7 @@ which handles domestic investigations.
 
 **Controversies and history:** It's record is debated. Well-known episodes include the 1953 coup in Iran, the failed Bay of Pigs invasion in Cuba (1961),
 the Cold War operations in many countries, the "enhanced interrogation" program after 9/11, and the intelligence failures around Iraq's weapons claims in 2003.
-Congressional oversight, such as the Church Committee in the 1970s, was created partly in response to abuses.
+Congressional oversight, such as the Church Committee in the 1970s, was created partly in response to abuses
 
 
   
