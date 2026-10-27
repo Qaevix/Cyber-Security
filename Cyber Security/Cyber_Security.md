@@ -2,7 +2,6 @@
 # 🛡️ What Is Cybersecurity?
 
 ````markdown
-
 **Cybersecurity** is the practice of protecting computers, networks, applications and data from unauthorized access, misuse,
 disruption, damage or theft. It combines **people, processes and technology** to reduce security risks and respond to incidents.
 
@@ -14,7 +13,9 @@ form the **CIA Triad**, a foundational model in information security.
 
 > In information security, CIA stands for Confidentiality, Integrity and Availability.
 ````
+
 ## 1. The CIA Triad
+
 ````markdown
   The CIA Triad helps us understand what needs protection and choose appropriate security measures. A single measure can support
 more than one principle.
@@ -101,7 +102,9 @@ on resilient infrastructure and tested restoration procedures.
 
 > **Example:** A university portal remains accessible during registration, even when many students log in at once.
 ````
+
 ## 2. Why the CIA Triad Matters
+
 ````markdown
   Security decisions often involve trade-offs. Strict access controls may protect sensitive information, but poorly designed
 authentication can also prevent legitimate users from accessing essential services.
@@ -116,9 +119,11 @@ accurate while being available to authorized medical staff during emergencies.
 | The student portal goes offline during registration | Availability |
 
 > One incident can affect multiple principles. Ransomware can make information unavailable, modify files and expose stolen data.
+````
 
 ## 3. Practical Example: A Student Portal
 
+````markdown
 A student portal demonstrates how the three principles work together.
 
 ### Protecting Confidentiality
@@ -141,9 +146,11 @@ A student portal demonstrates how the three principles work together.
 - Plan capacity for busy registration periods.
 - Use redundant components to reduce interruptions.
 - Maintain backups and regularly test recovery procedures.
+````
 
 ## 4. Beyond the CIA Triad
 
+````markdown
 Other security concepts complement the three core principles:
 
 | Concept | Meaning |
