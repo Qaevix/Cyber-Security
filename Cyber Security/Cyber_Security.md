@@ -13,10 +13,10 @@ Its central goals are to preserve the **confidentiality, integrity and availabil
 form the **CIA Triad**, a foundational model in information security.
 
 > In information security, CIA stands for Confidentiality, Integrity and Availability.
-
+````
 ## 1. The CIA Triad
-
-The CIA Triad helps us understand what needs protection and choose appropriate security measures. A single measure can support
+````markdown
+  The CIA Triad helps us understand what needs protection and choose appropriate security measures. A single measure can support
 more than one principle.
 
 | Principle | Purpose | Key Question |
@@ -100,10 +100,10 @@ It involves keeping services operational and restoring them within an acceptable
 on resilient infrastructure and tested restoration procedures.
 
 > **Example:** A university portal remains accessible during registration, even when many students log in at once.
-
+````
 ## 2. Why the CIA Triad Matters
-
-Security decisions often involve trade-offs. Strict access controls may protect sensitive information, but poorly designed
+````markdown
+  Security decisions often involve trade-offs. Strict access controls may protect sensitive information, but poorly designed
 authentication can also prevent legitimate users from accessing essential services.
 
 The right balance depends on the system's purpose. A hospital, for example, needs patient records to remain confidential and
