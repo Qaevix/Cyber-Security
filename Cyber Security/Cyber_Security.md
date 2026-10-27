@@ -1,7 +1,8 @@
 
-````markdown
+
 # 🛡️ What Is Cybersecurity?
 
+````markdown
 Cybersecurity is the practice of protecting computers, networks, applications and data from unauthorized access, misuse, disruption, damage or theft. It combines **people, processes and technology** to reduce security risks and respond to incidents.
 
 Common threats include malware, phishing, ransomware and data breaches. Cybersecurity covers areas such as:
