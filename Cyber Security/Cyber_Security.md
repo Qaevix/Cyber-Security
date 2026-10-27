@@ -1,67 +1,173 @@
-# What is Cyber Security?
 
-  Cyber security is the practice of protecting computers, networks, systems and data from unauthorized access, attacks, damage or theft.
-It includes technologies, processes and security practices used to defend digital systems against threaths such as malware, phishing, ransomware, 
-data breaches and hacking attempts.
+````markdown
+# 🛡️ What Is Cybersecurity?
 
-  The main goal of cyber security is to protect to confidentiality, integrity and availability of information. These three principles are known as the CIA Triad 
-and form foundation of information security. Cyber security is used in many areas, including network security, web security, cloud security, penetration testing,
-digital forensics, malware analysis and incident response.
+Cybersecurity is the practice of protecting computers, networks, applications and data from unauthorized access, misuse, disruption, damage or theft. It combines **people, processes and technology** to reduce security risks and respond to incidents.
 
-## 1. The CIA Triad (Information Security)
+Common threats include malware, phishing, ransomware and data breaches. Cybersecurity covers areas such as:
 
-It's the foundation model for thinking about security. Every security control you meet usually protects one or more of these three properties.
+- Network and application security
+- Cloud security
+- Penetration testing
+- Digital forensics
+- Malware analysis
+- Incident response
 
-**Confidentiality** means information is seen only by people who are aloowed to see it.
+The main goal is to preserve the **confidentiality, integrity and availability** of information. These three principles form the **CIA Triad**, a foundational model in information security.
 
-- **Threats:** Eavesdropping, stolen passwords, data leaks, phishing.
-- **Protections:** Encryption (AES, TLS/HTTPS), strong authentication (passwords plus two-factor), access control (user roles and permissions), and the "least privilege"
-principle, where people get only the access they need.
+> **Note:** Here, CIA means **Confidentiality, Integrity and Availability**, not the Central Intelligence Agency.
 
-**Integrity** means data is accurate, complete and not modified without authorization. It covers accidental changes (a bug, a disk error) as well as malicious ones.
+## 📑 Contents
 
-- **Threats:** Tampering with data in transit, SQL injection that alters records, malware, human error.
-- **Protections:** Hash functions (SHA-256) to detect changes, digital signatures, checksums, version control, input validation and audit logs that record whı changed what.
+- [1. The CIA Triad](#1-the-cia-triad)
+  - [Confidentiality](#confidentiality)
+  - [Integrity](#integrity)
+  - [Availability](#availability)
+- [2. Why the CIA Triad Matters](#2-why-the-cia-triad-matters)
+- [3. Practical Example: A Student Portal](#3-practical-example-a-student-portal)
+- [4. Beyond the CIA Triad](#4-beyond-the-cia-triad)
 
-**Availability** means systems and data can be used when they're needed.
+## 1. The CIA Triad
 
-- **Threats:** DDoS attacks, ransomware, hardware failure, power outages, natural disasters
-- **Protectiions:** Backups, redundant servers, load balancing, failover systems, regular updates and disaster recovery plans.
+The CIA Triad helps us identify what needs protection and choose appropriate security controls. A single control can support more than one principle.
 
-  **Why the triad matters:** the three goals often pıll against each other. Very strict confidentiality (many locks and checks) can reduce availability, because legitimate
-  users struggle to get in. Security design is about balancing them of patient records, while a secret military document puts confidentiality first.
+| Principle | Main purpose | Key question |
+|---|---|---|
+| **Confidentiality** | Prevent unauthorized disclosure | Who can access the information? |
+| **Integrity** | Prevent improper modification or destruction | Can we trust the information? |
+| **Availability** | Maintain timely, reliable access | Can we use it when needed? |
 
-  **Programming example:** a login system for a student portal.
+### Confidentiality
 
-  - **Confidentiality** Passwords are stored as salted hashes and the connection uses HTTPS.
-  - **Integrity:** Grades can only be changed by teachers and every change is logged.
-  - **Availability:** The server is backed up and can handle many students logging in at once.
- 
-  Some people extend the triad with authenticity and non-repudiation (someone can't deny they performed an action),
-  but the three core ideas are the standard.
+**Confidentiality** ensures that information is accessible only to authorized people, systems or processes.
 
-##  2. The CIA (Central Intelligence Agency)
+#### Common threats
 
-  Background: The CIA was created by the National Security Act of 1947, after World War II and the intelligence failures around Pearl Harbor.
-  It replaced thr wartime OSS (Office of Strategic Services) and became the main civillian foreign intelligence agency of the United States.
-  It is headquarters are in Langley, Virginia.
+- Eavesdropping on network communications
+- Stolen passwords and compromised accounts
+- Phishing and social engineering
+- Accidental exposure of private files
+- Misconfigured access permissions
 
-What is does:
+#### Typical protections
 
-- **Collection:** Gathers intelligence from human sources (spies and informants), open sources, and technical means, often working alongside other agencies like the NASA.
-- **Analysis:** Turns raw information into assessments for the President and policymakers, such as the daily intelligence briefing.
-- **Covert action:** Carries out secret operations to influence events abroad, only when authorized by the President.
-- **Counterintelligence:** Protects agains foreign spies and intelligence operations.
+- **Encryption:** Protect stored data with suitable encryption, such as AES, and network traffic with TLS, as used by HTTPS.
+- **Multi-factor authentication (MFA):** Require more than one type of proof of identity.
+- **Access controls:** Define which resources each user or system may access.
+- **Least privilege:** Grant only the permissions required to perform a task.
 
-**Structure:** It's led by the Director of the CIA and has several directorates, including analysis, operations, science and technology and support. 
-It's one part of the larger US Intelligence Community, which has about 18 agencies
+> **Example:** A student can view their own academic records but cannot access another student's private information.
 
-**Limits:** By law, the CIA focuses on foreign intelligence and has no police or domestic law enforcement power. That's the main difference from the FBI,
-which handles domestic investigations.
+### Integrity
 
-**Controversies and history:** It's record is debated. Well-known episodes include the 1953 coup in Iran, the failed Bay of Pigs invasion in Cuba (1961),
-the Cold War operations in many countries, the "enhanced interrogation" program after 9/11, and the intelligence failures around Iraq's weapons claims in 2003.
-Congressional oversight, such as the Church Committee in the 1970s, was created partly in response to abuses.
+**Integrity** protects information against unauthorized or improper modification or destruction. It helps keep data accurate and complete throughout its lifecycle.
+
+Integrity addresses both deliberate tampering and accidental changes caused by software bugs, hardware faults or human error.
+
+#### Common threats
+
+- Unauthorized changes to database records
+- SQL injection that modifies or deletes data
+- Tampering with files or network messages
+- Accidental edits and data corruption
+
+#### Typical protections
+
+- **Cryptographic hashes:** Detect changes by comparing a file's hash with a trusted reference value.
+- **Message authentication codes and digital signatures:** Help verify integrity and authenticity.
+- **Authorization controls:** Restrict who can create, modify or delete information.
+- **Input validation:** Check that input meets the application's requirements.
+- **Parameterized queries:** Keep SQL instructions separate from supplied values to prevent SQL injection.
+- **Version control and protected audit logs:** Track changes and support investigation and recovery.
+
+> **Important:** A hash alone does not prove that data is trustworthy. If an attacker can replace both a file and its reference hash, the comparison will not reveal the tampering. Ordinary checksums help detect accidental corruption but are not designed to resist malicious changes.
+
+> **Example:** Only authorized teaching staff can update a student's grade, and each change is recorded in a protected audit log.
+
+### Availability
+
+**Availability** ensures that authorized users can access systems, services and information when needed.
+
+It involves keeping services operational and restoring them within an acceptable time after a failure or attack.
+
+#### Common threats
+
+- Distributed denial-of-service (DDoS) attacks
+- Ransomware
+- Hardware failures
+- Power outages and network disruptions
+- Natural disasters
+
+#### Typical protections
+
+- **Backups and tested recovery procedures:** Restore information after loss or corruption.
+- **Redundancy and failover:** Keep services operating when a component fails.
+- **Load balancing and capacity planning:** Handle expected traffic and periods of high demand.
+- **Monitoring and maintenance:** Detect problems and reduce avoidable disruptions.
+- **Disaster recovery plans:** Define how critical services will be restored.
+
+> **Important:** Backups support recovery, but they do not automatically keep a service online. Availability also depends on resilient infrastructure and tested restoration procedures.
+
+> **Example:** A university portal remains accessible during registration, even when many students log in at once.
+
+## 2. Why the CIA Triad Matters
+
+Security decisions often involve trade-offs. A restrictive access policy may protect sensitive information, but a poorly designed authentication process can also block legitimate users.
+
+The right balance depends on the system's purpose. For example, a hospital needs patient records to remain:
+
+- **Confidential:** Accessible only to authorized people.
+- **Accurate and protected:** Safe from improper changes.
+- **Available:** Accessible to authorized medical staff during emergencies.
+
+The CIA Triad provides a practical way to assess the impact of a security incident:
+
+| Incident | Primary principle affected |
+|---|---|
+| Private student records are leaked | Confidentiality |
+| A grade is changed without authorization | Integrity |
+| The student portal goes offline during registration | Availability |
+
+> A single incident can affect multiple principles. Ransomware, for example, can interrupt access, alter files and expose stolen information.
+
+## 3. Practical Example: A Student Portal
+
+A student portal shows how all three principles work together.
+
+### Protecting Confidentiality
+
+- Use **HTTPS** to protect network traffic.
+- Check permissions before returning private information.
+- Store passwords using a dedicated password-hashing method with a unique salt.
+- Require additional authentication where appropriate.
+
+### Preserving Integrity
+
+- Verify permissions on the backend before accepting grade changes.
+- Use parameterized queries to prevent SQL injection.
+- Validate submitted data.
+- Keep protected audit logs recording who changed a grade and when.
+
+### Maintaining Availability
+
+- Monitor service health and respond to failures.
+- Plan capacity for busy registration periods.
+- Use redundant components to reduce interruptions.
+- Maintain backups and regularly test recovery procedures.
+
+## 4. Beyond the CIA Triad
+
+Other security concepts complement the three core principles:
+
+| Concept | Meaning |
+|---|---|
+| **Authenticity** | Confidence that an entity or piece of information is genuine |
+| **Accountability** | The ability to trace actions to the responsible entity |
+| **Non-repudiation** | Evidence supporting the origin or performance of an action that helps counter a later denial |
+
+Together, these concepts help guide the design and operation of trustworthy systems.
+````
+
 
 
   
